@@ -8,8 +8,8 @@ const app = express();
 
 async function generateIndexHTML() {
   const title: string = packageData.logName;
-  const here: string = fromHere("../");
-  const solutions = await find(fromHere("/*"));
+  const here: string = fromHere("solutions/../");
+  const solutions = await find(fromHere("solutions/*"));
   const links = solutions
     .filter((n) => n.indexOf(".ts") === -1 && n.indexOf(".html") === -1)
     .map((solution) => {
@@ -38,7 +38,7 @@ ${links.join("\n")}
   return html;
 }
 
-app.use("/solutions", express.static(fromHere("")));
+app.use("/solutions", express.static(fromHere("solutions")));
 
 app.get("/", async (req, res) => {
   const html = await generateIndexHTML();
