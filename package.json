@@ -1,8 +1,8 @@
 {
-  "name": "advent-of-code-template",
-  "logName": "Advent of Code Template",
+  "name": "advent-of-code-ts-2019",
+  "logName": "Advent of Code 2019",
   "version": "1.0.0",
-  "description": "Advent of Code Template using Node TS for Current Year.",
+  "description": "Advent of Code 2019 using Node TS for Current Year.",
   "main": "run.ts",
   "scripts": {
     "start": "ts-node run.ts",
