@@ -11,7 +11,7 @@
   "author": "John Beech, Michael Gardner",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "pre-push": "*",
     "promise-path": "*",
     "stats-lite": "*"
